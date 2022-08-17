@@ -470,9 +470,10 @@ img {
   }
 }
 
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
-  .prev,
+
+@media screen and (max-width: 500px) {
+  
+    .prev,
   .next,
   .text {
     font-size: 11px;
@@ -491,8 +492,7 @@ img {
 .attribution a:hover {
   color: var(--Orange);
 }
-
-@media screen and (max-width: 500px) {
+  
   #logo{margin-left: -48px;}
   .hamburger{display: block;}
   .navbarlinks {
@@ -795,4 +795,4 @@ img {
   
   .nav-container input[type="checkbox"]:checked ~ .logo{
     display: none;
-  }
+}}
