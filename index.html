@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Site</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/6006a0109e.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <div class="container" onclick="myFunction(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+        <ul id="navbar">
+            <li id="logo">sneakers</li>
+            <div class="navbarlinks">
+                <li class="navlinks collections"><a href=""> Collections</a></li>
+                <li class="navlinks men"><a href=""> Men</a></li>
+                <li class="navlinks women"><a href=""> Women</a></li>
+                <li class="navlinks about"><a href=""> About</a></li>
+                <li class="navlinks contact"><a href=""> Contact</a></li>
+            </div>
+            <div id="navright">
+                <div id="cart">
+                    <i class="fa fa-light fa-shopping-cart"></i>
+                </div>
+                <img src="./Images/image-avatar.png" alt="#" height="50px">
+            </div>
+        </ul>
+    </header>
+    <hr class="navline">
+
+
+    <div id="clickoncart">
+        <h5>Cart</h5>
+        <hr>
+        <div id="cartitem">
+            <p id="emptycartmsg">Your cart is empty</p>
+            <div id="cartcontent">
+                <img src="./Images/image-product-1-thumbnail.jpg" alt="#" height="55px
+">
+                <p>Fall Limited Edition Sneakers
+                    <br><span id="finalpricecalc">$125.00✕1 = </span><span id="finalcartprice">$125 </span> <span
+                        id="delete"><i class="fa fa-trash-o"></i></span>
+                </p>
+            </div>
+
+        </div>
+
+        <button id="checkout">Checkout</button>
+    </div>
+    <section id="home">
+        <div id="homeleft">
+            <img id="mainimg" src="./Images/image-product-1.jpg" alt="">
+            <div id="smallimages">
+                <img id="smallimg1" src="./Images/image-product-1-thumbnail.jpg" alt="" class="smallimg activeimg">
+                <img id="smallimg2" src="./Images/image-product-2-thumbnail.jpg" alt="" class="smallimg">
+                <img id="smallimg3" src="./Images/image-product-3-thumbnail.jpg" alt="" class="smallimg">
+                <img id="smallimg4" src="./Images/image-product-4-thumbnail.jpg" alt="" class="smallimg">
+            </div>
+        </div>
+
+        <div id="homeright">
+            <h3>Sneaker company</h3>
+            <h1>Fall Limited Edition<br> Sneakers</h1>
+            <p>These low-profile sneakers are your perfect casual wear<br>companion. Featuring a
+                durable rubber outer sole, they’ll<br>withstand everything the weather can offer.
+            </p>
+            <div id="price">
+                <h4>$125.00</h4><span id="discount">50%</span>
+            </div>
+            <span id="oldprice">
+                <h5>$250.00</h5>
+            </span>
+            <div id="btnandquan">
+                <div id="quantity">
+                    <span id="reducequan">
+                        <p>-</p>
+                    </span>
+                    <span id="productquantity">0</span>
+                    <span id="addquan">
+                        <p>+
+                        <p>
+                    </span>
+                </div>
+                <button id="btn"><img src="./Images/icons8-shopping-cart-24 (1).png" alt=""><span id="atc">Add to
+                        cart</span></button>
+            </div>
+        </div>
+
+    </section>
+    <span id="orderlimit">
+        <!-- To be added using JS -->
+    </span>
+
+
+
+
+
+
+
+
+
+
+    <span id="cross">x</span>
+    <div id="slideshow-container">
+        <div class="mySlides fade">
+            <div class="numbertext">1 / 4</div>
+            <img src="./Images/image-product-4.jpg" style="width:100%">
+
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 4</div>
+            <img src="./Images/image-product-2.jpg" style="width:100%">
+
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 4</div>
+            <img src="./Images/image-product-1.jpg" style="width:100%">
+
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">4/4</div>
+            <img src="./Images/image-product-3.jpg" style="width:100%">
+
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+
+    </div>
+    <br>
+
+    <div id="dotcontainer" style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot dot2" onclick="currentSlide(2)"></span>
+        <span class="dot dot3" onclick="currentSlide(3)"></span>
+        <span class="dot dot4" onclick="currentSlide(4)"></span>
+    </div>
+
+    <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+        Coded by <a href="https://www.frontendmentor.io/profile/satyammjha">@satyammjha</a>.
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
