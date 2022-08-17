@@ -572,6 +572,7 @@ img {
     width: 100%;
     visibility: visible;
     box-shadow: none;
+    position:absolute;
   }
   .numbertext {
     display: none;
