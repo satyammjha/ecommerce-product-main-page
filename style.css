@@ -554,7 +554,6 @@ img {
   #reducequan {
     position: absolute;
     margin-left: -77%;
-    z-index: -1;
   }
   .attribution {
     margin-top: 120px;
